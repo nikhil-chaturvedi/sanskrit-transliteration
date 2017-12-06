@@ -324,8 +324,8 @@ int yyFlexLexer::yywrap() { return 1; }
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
 
-#define YY_NUM_RULES 17
-#define YY_END_OF_BUFFER 18
+#define YY_NUM_RULES 18
+#define YY_END_OF_BUFFER 19
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -333,12 +333,12 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static yyconst flex_int16_t yy_accept[32] =
+static yyconst flex_int16_t yy_accept[33] =
     {   0,
-        0,    0,   18,   16,    2,    1,   15,   16,    2,    0,
-        0,    5,    6,    7,    4,   10,    8,    9,    3,   14,
-        0,    0,    0,   11,   10,   13,    0,    0,    0,   12,
-        0
+        0,    0,   19,   17,    2,    1,   16,   17,    2,    0,
+        0,    5,    7,    8,    4,   11,    6,    9,   10,    3,
+       15,    0,    0,    0,   12,   11,   14,    0,    0,    0,
+       13,    0
     } ;
 
 static yyconst flex_int32_t yy_ec[256] =
@@ -362,67 +362,67 @@ static yyconst flex_int32_t yy_ec[256] =
        14,   14,   14,   14,   14,   14,   14,   14,   14,   15,
        15,   16,   16,   17,   18,   19,   19,   19,   19,   19,
        19,   19,   19,   19,   19,   14,   14,   14,   14,   14,
-       14,   14,   14,   14,   14,    1,    1,   20,    1,   21,
-       21,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+       14,   14,   14,   14,   14,    1,    1,   20,   21,   22,
+       22,    1,    1,    1,    1,    1,    1,    1,    1,    1,
 
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,   22,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,   23,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1
     } ;
 
-static yyconst flex_int32_t yy_meta[23] =
+static yyconst flex_int32_t yy_meta[24] =
     {   0,
         1,    1,    1,    1,    2,    2,    2,    2,    2,    3,
         1,    1,    1,    1,    1,    2,    1,    1,    1,    1,
-        1,    1
+        1,    1,    1
     } ;
 
-static yyconst flex_int16_t yy_base[35] =
+static yyconst flex_int16_t yy_base[36] =
     {   0,
-        0,   21,   35,   71,   32,   71,   71,    0,   31,   38,
-       46,   71,   71,   71,   71,   10,   71,   71,   71,   71,
-        2,    6,   21,    8,   71,   71,   11,    0,    0,   71,
-       71,   65,   67,    3
+        0,   22,   35,   75,   32,   75,   75,    0,   31,   40,
+       50,   75,   75,   75,   75,    9,   75,   75,   75,   75,
+       75,    2,    7,   21,    7,   75,   75,    4,    6,    0,
+       75,   75,   69,   71,    3
     } ;
 
-static yyconst flex_int16_t yy_def[35] =
+static yyconst flex_int16_t yy_def[36] =
     {   0,
-       32,   32,   31,   31,   31,   31,   31,   31,   31,   31,
-       31,   31,   31,   31,   31,   31,   31,   31,   31,   31,
-       31,   31,   33,   31,   31,   31,   31,   31,   34,   31,
-        0,   31,   31,   31
+       33,   33,   32,   32,   32,   32,   32,   32,   32,   32,
+       32,   32,   32,   32,   32,   32,   32,   32,   32,   32,
+       32,   32,   32,   34,   32,   32,   32,   32,   32,   35,
+       32,    0,   32,   32,   32
     } ;
 
-static yyconst flex_int16_t yy_nxt[94] =
+static yyconst flex_int16_t yy_nxt[99] =
     {   0,
-       31,    5,    6,    7,   30,   31,   31,   31,   31,   31,
-       31,   31,   31,   31,   31,   31,   10,   11,   22,   23,
-       30,    8,    5,    6,    7,   24,   25,   28,   29,   27,
-       26,   21,    9,    9,   31,   31,   31,   31,   31,   31,
-       31,   31,    8,   12,   13,   14,   15,   15,   15,   15,
-       15,   16,   16,   16,   16,   16,   16,   17,   18,   31,
-       15,   31,   19,   19,   20,    4,    4,    4,   25,   25,
-        3,   31,   31,   31,   31,   31,   31,   31,   31,   31,
-       31,   31,   31,   31,   31,   31,   31,   31,   31,   31,
-       31,   31,   31
+       32,    5,    6,    7,   31,   32,   32,   32,   32,   32,
+       32,   32,   32,   32,   32,   32,   10,   11,   23,   24,
+       29,   30,    8,    5,    6,    7,   25,   31,   26,   28,
+       27,   22,    9,    9,   32,   32,   32,   32,   32,   32,
+       32,   32,   32,   32,    8,   12,   13,   14,   15,   15,
+       15,   15,   15,   16,   16,   16,   16,   16,   16,   32,
+       17,   18,   19,   32,   15,   32,   20,   20,   21,    4,
+        4,    4,   26,   26,    3,   32,   32,   32,   32,   32,
+       32,   32,   32,   32,   32,   32,   32,   32,   32,   32,
+       32,   32,   32,   32,   32,   32,   32,   32
 
     } ;
 
-static yyconst flex_int16_t yy_chk[94] =
+static yyconst flex_int16_t yy_chk[99] =
     {   0,
-        0,    1,    1,    1,   34,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,    0,    0,    8,    8,   21,   21,
-       28,    1,    2,    2,    2,   22,   22,   27,   27,   24,
-       23,   16,    9,    5,    3,    0,    0,    0,    0,    0,
-        0,    0,    2,   10,   10,   10,   10,   10,   10,   10,
-       10,   10,   10,   10,   10,   10,   10,   11,   11,    0,
-       11,    0,   11,   11,   11,   32,   32,   32,   33,   33,
-       31,   31,   31,   31,   31,   31,   31,   31,   31,   31,
-       31,   31,   31,   31,   31,   31,   31,   31,   31,   31,
-       31,   31,   31
+        0,    1,    1,    1,   35,    0,    0,    0,    0,    0,
+        0,    0,    0,    0,    0,    0,    8,    8,   22,   22,
+       28,   28,    1,    2,    2,    2,   23,   29,   23,   25,
+       24,   16,    9,    5,    3,    0,    0,    0,    0,    0,
+        0,    0,    0,    0,    2,   10,   10,   10,   10,   10,
+       10,   10,   10,   10,   10,   10,   10,   10,   10,    0,
+       10,   11,   11,    0,   11,    0,   11,   11,   11,   33,
+       33,   33,   34,   34,   32,   32,   32,   32,   32,   32,
+       32,   32,   32,   32,   32,   32,   32,   32,   32,   32,
+       32,   32,   32,   32,   32,   32,   32,   32
 
     } ;
 
@@ -555,7 +555,7 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
     
-#line 44 "Devanagiri/transcribe.l"
+#line 45 "Devanagiri/transcribe.l"
 
 #line 561 "lex.Dev.cc"
 
@@ -610,13 +610,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 32 )
+				if ( yy_current_state >= 33 )
 					yy_c = yy_meta[(unsigned int) yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 71 );
+		while ( yy_base[yy_current_state] != 75 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -643,94 +643,99 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
-#line 45 "Devanagiri/transcribe.l"
+#line 46 "Devanagiri/transcribe.l"
 return -2;
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 46 "Devanagiri/transcribe.l"
+#line 47 "Devanagiri/transcribe.l"
 return devEncoder.encodeVyanjan(yytext, yyleng, true);
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 47 "Devanagiri/transcribe.l"
+#line 48 "Devanagiri/transcribe.l"
 return devEncoder.encodePunctuation(yytext, yyleng);
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 48 "Devanagiri/transcribe.l"
+#line 49 "Devanagiri/transcribe.l"
 return devEncoder.encodeSwar(yytext, yyleng);
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 49 "Devanagiri/transcribe.l"
+#line 50 "Devanagiri/transcribe.l"
 return devEncoder.encodeVyanjan(yytext, yyleng, true);
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 50 "Devanagiri/transcribe.l"
+#line 51 "Devanagiri/transcribe.l"
 return devEncoder.encodeVyanjan(yytext, yyleng, true);
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 51 "Devanagiri/transcribe.l"
+#line 52 "Devanagiri/transcribe.l"
 return devEncoder.encodeVyanjan(yytext, yyleng, true);
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 52 "Devanagiri/transcribe.l"
+#line 53 "Devanagiri/transcribe.l"
 return devEncoder.encodeVyanjan(yytext, yyleng, true);
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 53 "Devanagiri/transcribe.l"
+#line 54 "Devanagiri/transcribe.l"
 return devEncoder.encodeVyanjan(yytext, yyleng, true);
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 54 "Devanagiri/transcribe.l"
-return devEncoder.encodeVyanjan(yytext, yyleng);
-	YY_BREAK
-case 11:
-YY_RULE_SETUP
 #line 55 "Devanagiri/transcribe.l"
 return devEncoder.encodeVyanjan(yytext, yyleng, true);
 	YY_BREAK
-case 12:
+case 11:
 YY_RULE_SETUP
 #line 56 "Devanagiri/transcribe.l"
 return devEncoder.encodeVyanjan(yytext, yyleng);
 	YY_BREAK
-case 13:
+case 12:
 YY_RULE_SETUP
 #line 57 "Devanagiri/transcribe.l"
-return devEncoder.encodeVyanjan(yytext, yyleng, false, true);
+return devEncoder.encodeVyanjan(yytext, yyleng, true);
+	YY_BREAK
+case 13:
+YY_RULE_SETUP
+#line 58 "Devanagiri/transcribe.l"
+return devEncoder.encodeVyanjan(yytext, yyleng);
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 58 "Devanagiri/transcribe.l"
-return devEncoder.encodeNumber(yytext, yyleng);
+#line 59 "Devanagiri/transcribe.l"
+return devEncoder.encodeVyanjan(yytext, yyleng, false, true);
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 59 "Devanagiri/transcribe.l"
-return devEncoder.encodePunctuation(yytext, yyleng);
-	YY_BREAK
-case YY_STATE_EOF(INITIAL):
 #line 60 "Devanagiri/transcribe.l"
-return -1;
+return devEncoder.encodeNumber(yytext, yyleng);
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
 #line 61 "Devanagiri/transcribe.l"
-printf("");
+return devEncoder.encodePunctuation(yytext, yyleng);
+	YY_BREAK
+case YY_STATE_EOF(INITIAL):
+#line 62 "Devanagiri/transcribe.l"
+return -1;
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 62 "Devanagiri/transcribe.l"
+#line 63 "Devanagiri/transcribe.l"
+printf("");
+	YY_BREAK
+case 18:
+YY_RULE_SETUP
+#line 64 "Devanagiri/transcribe.l"
 ECHO;
 	YY_BREAK
-#line 734 "lex.Dev.cc"
+#line 739 "lex.Dev.cc"
 
 	case YY_END_OF_BUFFER:
 		{
@@ -1109,7 +1114,7 @@ int yyFlexLexer::yy_get_next_buffer()
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 32 )
+			if ( yy_current_state >= 33 )
 				yy_c = yy_meta[(unsigned int) yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
@@ -1137,11 +1142,11 @@ int yyFlexLexer::yy_get_next_buffer()
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 32 )
+		if ( yy_current_state >= 33 )
 			yy_c = yy_meta[(unsigned int) yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
-	yy_is_jam = (yy_current_state == 31);
+	yy_is_jam = (yy_current_state == 32);
 
 	return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1628,6 +1633,6 @@ void Devfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 62 "Devanagiri/transcribe.l"
+#line 64 "Devanagiri/transcribe.l"
 
 

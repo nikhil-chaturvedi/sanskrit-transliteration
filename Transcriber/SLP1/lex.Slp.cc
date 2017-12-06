@@ -324,8 +324,8 @@ int yyFlexLexer::yywrap() { return 1; }
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
 
-#define YY_NUM_RULES 15
-#define YY_END_OF_BUFFER 16
+#define YY_NUM_RULES 16
+#define YY_END_OF_BUFFER 17
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -333,10 +333,11 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static yyconst flex_int16_t yy_accept[21] =
+static yyconst flex_int16_t yy_accept[22] =
     {   0,
-        0,    0,   16,   14,    2,    1,   13,    7,   12,    3,
-        9,    6,    5,    8,    4,    2,   10,    9,   11,    0
+        0,    0,   17,   15,    2,    1,   14,    6,    8,   13,
+        3,   10,    7,    5,    9,    4,    2,   11,   10,   12,
+        0
     } ;
 
 static yyconst flex_int32_t yy_ec[256] =
@@ -344,17 +345,17 @@ static yyconst flex_int32_t yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    2,    3,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    2,    4,    4,    4,    4,    4,    4,    4,    4,
-        4,    5,    4,    4,    1,    4,    6,    7,    7,    7,
-        7,    7,    7,    7,    7,    7,    7,    4,    4,    4,
-        4,    4,    4,    4,    8,    9,    9,    9,    8,    8,
-        9,   10,    8,    9,    9,    1,   11,    9,    8,    9,
-        9,    9,    9,    9,    8,    1,    9,    8,    9,    1,
-        4,   12,    1,    4,    4,    4,    8,    9,    9,    9,
+        1,    2,    4,    4,    4,    4,    4,    4,    5,    4,
+        4,    6,    4,    4,    1,    4,    7,    8,    8,    8,
+        8,    8,    8,    8,    8,    8,    8,    4,    4,    4,
+        4,    4,    4,    4,    9,   10,   10,   10,    9,    9,
+       10,   11,    9,   10,   10,    1,   12,   10,    9,   10,
+       10,   10,   10,   10,    9,    1,   10,    9,   10,    1,
+        4,   13,    1,    4,    4,    4,    9,   10,   10,   10,
 
-        8,    8,    9,    9,    8,    9,    9,    9,    9,    9,
-        8,    9,    9,    9,    9,    9,    8,    9,    9,    8,
-        9,    9,    4,    4,    4,   13,    1,    1,    1,    1,
+        9,    9,   10,   10,    9,   10,   10,   10,   10,   10,
+        9,   10,   10,   10,   10,   10,    9,   10,   10,    9,
+       10,   10,    4,    4,    4,   14,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -371,38 +372,40 @@ static yyconst flex_int32_t yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static yyconst flex_int32_t yy_meta[14] =
+static yyconst flex_int32_t yy_meta[15] =
     {   0,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1
+        1,    1,    1,    1
     } ;
 
-static yyconst flex_int16_t yy_base[21] =
+static yyconst flex_int16_t yy_base[22] =
     {   0,
-        0,    0,   19,   20,   16,   20,   20,   20,   20,   20,
-        9,   20,   20,   20,   20,   14,    7,   20,   20,   20
+        0,    0,   20,   21,   17,   21,   21,   21,   21,   21,
+       21,    9,   21,   21,   21,   21,   15,    7,   21,   21,
+       21
     } ;
 
-static yyconst flex_int16_t yy_def[21] =
+static yyconst flex_int16_t yy_def[22] =
     {   0,
-       20,    1,   20,   20,   20,   20,   20,   20,   20,   20,
-       20,   20,   20,   20,   20,   20,   20,   20,   20,    0
+       21,    1,   21,   21,   21,   21,   21,   21,   21,   21,
+       21,   21,   21,   21,   21,   21,   21,   21,   21,   21,
+        0
     } ;
 
-static yyconst flex_int16_t yy_nxt[34] =
+static yyconst flex_int16_t yy_nxt[36] =
     {   0,
-        4,    5,    6,    7,    7,    8,    9,   10,   11,   12,
-       13,   14,   15,   17,   19,   16,   18,   16,   20,    3,
-       20,   20,   20,   20,   20,   20,   20,   20,   20,   20,
-       20,   20,   20
+        4,    5,    6,    7,    8,    7,    9,   10,   11,   12,
+       13,   14,   15,   16,   18,   20,   17,   19,   17,   21,
+        3,   21,   21,   21,   21,   21,   21,   21,   21,   21,
+       21,   21,   21,   21,   21
     } ;
 
-static yyconst flex_int16_t yy_chk[34] =
+static yyconst flex_int16_t yy_chk[36] =
     {   0,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,   11,   17,   16,   11,    5,    3,   20,
-       20,   20,   20,   20,   20,   20,   20,   20,   20,   20,
-       20,   20,   20
+        1,    1,    1,    1,   12,   18,   17,   12,    5,    3,
+       21,   21,   21,   21,   21,   21,   21,   21,   21,   21,
+       21,   21,   21,   21,   21
     } ;
 
 /* The intent behind this definition is that it'll catch
@@ -434,7 +437,7 @@ static yyconst flex_int16_t yy_chk[34] =
 using namespace std;
 
 SlpEncode slpEncoder;
-#line 438 "lex.Slp.cc"
+#line 441 "lex.Slp.cc"
 
 #define INITIAL 0
 
@@ -534,9 +537,9 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
     
-#line 41 "SLP1/transcribe.l"
+#line 42 "SLP1/transcribe.l"
 
-#line 540 "lex.Slp.cc"
+#line 543 "lex.Slp.cc"
 
 	if ( !(yy_init) )
 		{
@@ -589,13 +592,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 21 )
+				if ( yy_current_state >= 22 )
 					yy_c = yy_meta[(unsigned int) yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 20 );
+		while ( yy_base[yy_current_state] != 21 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -622,84 +625,89 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
-#line 42 "SLP1/transcribe.l"
+#line 43 "SLP1/transcribe.l"
 return -2;
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 43 "SLP1/transcribe.l"
+#line 44 "SLP1/transcribe.l"
 return slpEncoder.encodeVyanjan(yytext, yyleng, true);
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 44 "SLP1/transcribe.l"
+#line 45 "SLP1/transcribe.l"
 return slpEncoder.encodeSwar(yytext, yyleng);
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 45 "SLP1/transcribe.l"
+#line 46 "SLP1/transcribe.l"
 return slpEncoder.encodeVyanjan(yytext, yyleng, true);
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 46 "SLP1/transcribe.l"
+#line 47 "SLP1/transcribe.l"
 return slpEncoder.encodeVyanjan(yytext, yyleng, true);
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 47 "SLP1/transcribe.l"
+#line 48 "SLP1/transcribe.l"
 return slpEncoder.encodeVyanjan(yytext, yyleng, true);
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 48 "SLP1/transcribe.l"
+#line 49 "SLP1/transcribe.l"
 return slpEncoder.encodeVyanjan(yytext, yyleng, true);
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 49 "SLP1/transcribe.l"
+#line 50 "SLP1/transcribe.l"
 return slpEncoder.encodeVyanjan(yytext, yyleng, true);
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 50 "SLP1/transcribe.l"
-return slpEncoder.encodeVyanjan(yytext, yyleng);
-	YY_BREAK
-case 10:
-YY_RULE_SETUP
 #line 51 "SLP1/transcribe.l"
 return slpEncoder.encodeVyanjan(yytext, yyleng, true);
 	YY_BREAK
-case 11:
+case 10:
 YY_RULE_SETUP
 #line 52 "SLP1/transcribe.l"
 return slpEncoder.encodeVyanjan(yytext, yyleng);
 	YY_BREAK
-case 12:
+case 11:
 YY_RULE_SETUP
 #line 53 "SLP1/transcribe.l"
-return slpEncoder.encodeNumber(yytext, yyleng);
+return slpEncoder.encodeVyanjan(yytext, yyleng, true);
+	YY_BREAK
+case 12:
+YY_RULE_SETUP
+#line 54 "SLP1/transcribe.l"
+return slpEncoder.encodeVyanjan(yytext, yyleng);
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 54 "SLP1/transcribe.l"
-return slpEncoder.encodePunctuation(yytext, yyleng);
-	YY_BREAK
-case YY_STATE_EOF(INITIAL):
 #line 55 "SLP1/transcribe.l"
-return -1;
+return slpEncoder.encodeNumber(yytext, yyleng);
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
 #line 56 "SLP1/transcribe.l"
-printf("Unknown: %s\n", yytext);
+return slpEncoder.encodePunctuation(yytext, yyleng);
+	YY_BREAK
+case YY_STATE_EOF(INITIAL):
+#line 57 "SLP1/transcribe.l"
+return -1;
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 57 "SLP1/transcribe.l"
+#line 58 "SLP1/transcribe.l"
+printf("Unknown: %s\n", yytext);
+	YY_BREAK
+case 16:
+YY_RULE_SETUP
+#line 59 "SLP1/transcribe.l"
 ECHO;
 	YY_BREAK
-#line 703 "lex.Slp.cc"
+#line 711 "lex.Slp.cc"
 
 	case YY_END_OF_BUFFER:
 		{
@@ -1078,7 +1086,7 @@ int yyFlexLexer::yy_get_next_buffer()
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 21 )
+			if ( yy_current_state >= 22 )
 				yy_c = yy_meta[(unsigned int) yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
@@ -1106,11 +1114,11 @@ int yyFlexLexer::yy_get_next_buffer()
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 21 )
+		if ( yy_current_state >= 22 )
 			yy_c = yy_meta[(unsigned int) yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
-	yy_is_jam = (yy_current_state == 20);
+	yy_is_jam = (yy_current_state == 21);
 
 	return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1597,6 +1605,6 @@ void Slpfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 57 "SLP1/transcribe.l"
+#line 59 "SLP1/transcribe.l"
 
 

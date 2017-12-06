@@ -117,11 +117,11 @@ int main( int argc, char** argv)
         infile.open(argv[3]);
         lexer = getLexer(encodingScript, &infile);
     } else {
-        //stringstream ss;
-        //ss.str(argv[3]);
-        infile.open(argv[3]);
-        lexer = getLexer(encodingScript, &infile);
-        //lexer = getLexer(encodingScript, &ss);
+        stringstream ss;
+        ss.str(argv[3]);
+        //infile.open(argv[3]);
+        //lexer = getLexer(encodingScript, &infile);
+        lexer = getLexer(encodingScript, &ss);
     }
 
     short int temp;
@@ -159,7 +159,7 @@ int main( int argc, char** argv)
         for (short int code : encoding) {
             printf("%s", decoder->decode(code).c_str());
         }
-        //std::cout << std::endl;
+        std::cout << std::endl;
     }
 
     return 0;

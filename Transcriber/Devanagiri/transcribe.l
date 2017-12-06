@@ -27,6 +27,7 @@ vyanjan     [\xE0][\xA4][\x95-\xB9]
 swar        [\xE0]([\xA4][\x84-\x94]|[\xA5][\xA0-\xA1])
 halant      [\xE0][\xA5][\x8D]
 chandra     [\xE0][\xA4][\x81]
+avagrah     [\xE0][\xA4][\xBD]
 anuswar     [\xE0][\xA4][\x82]
 visarga     [\xE0][\xA4][\x83]
 nukta       [\xE0][\xA4][\xBC]
@@ -47,6 +48,7 @@ punctuation [~`!@#$%&_+=|:;'<>,./?\*\^\\\(\)\{\}\[\}\"]
 {viram}                     return devEncoder.encodePunctuation(yytext, yyleng);
 {swar}                      return devEncoder.encodeSwar(yytext, yyleng);
 {chandra}                   return devEncoder.encodeVyanjan(yytext, yyleng, true);
+{avagrah}                   return devEncoder.encodeVyanjan(yytext, yyleng, true);
 {anuswar}                   return devEncoder.encodeVyanjan(yytext, yyleng, true);
 {visarga}                   return devEncoder.encodeVyanjan(yytext, yyleng, true);
 {uddat}                     return devEncoder.encodeVyanjan(yytext, yyleng, true);

@@ -28,6 +28,7 @@ swar        [aAiIuUeEoOfFxX]
 chandra     [~]
 anuswar     [M]
 visarga     [H]
+avagrah		[']
 nukta       [*]
 uddat       [/]
 anuddat     [\\]
@@ -44,6 +45,7 @@ punctuation [`!@#$%&_+=|:;'<>,.?\*\^\(\)\{\}\[\}\"]
 {swar}                      return slpEncoder.encodeSwar(yytext, yyleng);
 {chandra}                   return slpEncoder.encodeVyanjan(yytext, yyleng, true);
 {anuswar}                   return slpEncoder.encodeVyanjan(yytext, yyleng, true);
+{avagrah}                   return slpEncoder.encodeVyanjan(yytext, yyleng, true);
 {visarga}                   return slpEncoder.encodeVyanjan(yytext, yyleng, true);
 {uddat}                     return slpEncoder.encodeVyanjan(yytext, yyleng, true);
 {anuddat}                   return slpEncoder.encodeVyanjan(yytext, yyleng, true);
